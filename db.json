@@ -1,9 +1,0 @@
-[
-  { "_id" : "582383b7ade205d089bf9d6f", "name" : "test 1.1", "tenantId" : 1 },
-  { "_id" : "582383baade205d089bf9d70", "name" : "test 1.2", "tenantId" : 1 },
-  { "_id" : "582383bcade205d089bf9d71", "name" : "test 1.3", "tenantId" : 1 },
-  { "_id" : "582383cdade205d089bf9d73", "name" : "test 2.2", "tenantId" : 2 },
-  { "_id" : "582383cfade205d089bf9d74", "name" : "test 2.3", "tenantId" : 2 },
-  { "_id" : "582383caade205d089bf9d72", "name" : "test 2.1", "private" : true, "tenantId" : 2 },
-  { "_id" : "582383b2ade205d089bf9d6e", "name" : "test 1.4", "private" : true, "tenantId" : 1 }
-]
