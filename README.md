@@ -2,7 +2,7 @@
 
 The idea behind this solution is to completely rely on one mechanism - ACL. So, we have rules for each role and based on this rules we can perform 2 important operations:
 * get all records from db accessible by specific ability: `Task.accessibleBy(req.ability)`
-* check whether we can perform an action on `Task`: `req.ability('delete', task)`
+* check whether we can perform an action on `Task`: `req.ability.can('delete', task)`
 
 The first can be checked this way:
 * GET /?user=admin|user|franchise ; `admin` and `user` are system tenants and `franchise` is another tenant which has access to tasks of `admin` and `user` tenants

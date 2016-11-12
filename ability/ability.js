@@ -1,4 +1,4 @@
-var actionAliases = {
+const actionAliases = {
   manage: 'create read update delete'.split(' ')
 }
 
@@ -12,7 +12,7 @@ function normalizeActions(actionOrAlias) {
   }
 
   return actionOrAlias.reduce((aliases, alias) => {
-    var actions = normalizeActions(actionAliases[alias] || [])
+    const actions = normalizeActions(actionAliases[alias] || [])
     return aliases.concat(actions)
   }, actionOrAlias)
 }
