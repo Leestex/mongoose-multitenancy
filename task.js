@@ -7,10 +7,11 @@ class Task {
 
 Task.schema = new mongoose.Schema({
   name: { type: String, required: true },
-  tenantId: { type: Number }
+  tenantId: { type: Number, set: value => this[field] || value },
+  private: { type: Boolean }
 })
 // Task.schema.plugin(loadClass, Task);
-Task.schema.plugin(mongoTenant)
+// Task.schema.plugin(mongoTenant)
 
 Task.schema.static('findPrivate', function(conditions) {
   return this.find(Object.assign({ private: true }, conditions))
